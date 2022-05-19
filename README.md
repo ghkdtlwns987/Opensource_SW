@@ -12,9 +12,16 @@
 ### top 
 #### 설명
 - 유닉스계열 시스템에서 프로세스 목록을 CPU 사용률이 높은 것부터 보여주는 소프트웨어
-- 첫 줄의 결과는 uptime 명령어와 동일하다.
 
 ![top 설명](https://user-images.githubusercontent.com/54488922/169214594-9906287d-fc58-40c9-9e5b-bdb70952054e.png)
+
+top 명령어는 줄 순서대로 표현한다고 보면 된다.
+1. 로드 에버리지 (Load Average)
+2. Tasks
+3. CPU 사용량
+4. 메모리 사용량
+5. 디테일 영역
+
 
 [모든 내용 보기](https://man7.org/linux/man-pages/man1/top.1.html)
 
@@ -68,6 +75,9 @@
 |Stopped(SIGTTOU)|SIGTTOU 신호가 작업을 일시 중단|
 
 ![jobs](https://user-images.githubusercontent.com/54488922/169215267-de3ad049-73df-4225-957e-d3759b95c4d4.png)
+위 그림을 구면 프로세스가 멈춰있거나 실행중인 경우를 출력해 준다. 
+jobs 는 이렇게 background 프로세스를 Foreground 로 전환하거나 다시 background 로 전환시킬 수 있다. 
+
 
 [모든 내용 보기](https://man7.org/linux/man-pages/man1/jobs.1p.html)
 
