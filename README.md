@@ -79,7 +79,8 @@ top 명령어는 줄 순서대로 표현한다고 보면 된다.
 jobs 는 이렇게 background 프로세스를 Foreground 로 전환하거나 다시 background 로 전환시킬 수 있다. 
 
 
-[모든 내용 보기](https://man7.org/linux/man-pages/man1/jobs.1p.html)
+[모든 내용 보기](https://man7.org/linux/man-pages/man1/jobs.1p.html)  
+
 
 
 ### kill [kill -9 [PID]] [kill [PID]]
