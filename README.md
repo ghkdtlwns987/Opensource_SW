@@ -2,7 +2,7 @@
 <img src="https://user-images.githubusercontent.com/54488922/168478163-dad1a247-58cf-4e5f-9870-4dd75ae66bfd.png" width="50%" height="50%"/>
 
 ## 리눅스 명령어
-|명령어|설명|예시|링크|
+| 명령어 |설명|예시|링크|
 |----|-----|---|---|
 |top|실시간으로 업데이트 되는 메모리 사용량, CPU 사용량 등을 보여줌.|$ top|[바로가기](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_top)|
 |ps|현재 실행중인 프로세스의 목록을 보는 명령어이다.|$ ps -ef|[바로가기](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_ps)|
