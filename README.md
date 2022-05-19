@@ -3,7 +3,7 @@
 
 ## 리눅스 명령어
 |명령어|설명|예시|링크|
-|---|-----|---|---|
+|----|-----|---|---|
 |top|실시간으로 업데이트 되는 메모리 사용량, CPU 사용량 등을 보여줌.|$ top|[바로가기](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_top)|
 |ps|현재 실행중인 프로세스의 목록을 보는 명령어이다.|$ ps -ef|[바로가기](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_ps)|
 |jobs|현재 쉘 세션에서 실행시킨 백그라운드 작업의 목록이 출력되는 명령어이다.|$ jobs|[바로가기](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_jobs)|
@@ -13,6 +13,8 @@
 #### 설명
 - 유닉스계열 시스템에서 프로세스 목록을 CPU 사용률이 높은 것부터 보여주는 소프트웨어
 - 첫 줄의 결과는 uptime 명령어와 동일하다.
+
+![top 설명](https://user-images.githubusercontent.com/54488922/169214594-9906287d-fc58-40c9-9e5b-bdb70952054e.png)
 
 [모든 내용 보기](https://man7.org/linux/man-pages/man1/top.1.html)
 
@@ -65,6 +67,8 @@
 |Stopped(SIGTTIN)|SIGTTIN 신호가 작업을 일시 중단|
 |Stopped(SIGTTOU)|SIGTTOU 신호가 작업을 일시 중단|
 
+![jobs](https://user-images.githubusercontent.com/54488922/169215267-de3ad049-73df-4225-957e-d3759b95c4d4.png)
+
 [모든 내용 보기](https://man7.org/linux/man-pages/man1/jobs.1p.html)
 
 
@@ -75,5 +79,7 @@
 |옵션 혹은 SIGNUM|설명|
 |---|---|
 |-l|signal 종류 출력(여기서 9번의 SIGKILL 이다.)|
+
+![kill 내용](https://user-images.githubusercontent.com/54488922/169214570-6b502c87-aa37-474b-ada5-54c7fc84f5f5.png)
 
 [모든 내용 보기](https://man7.org/linux/man-pages/man2/kill.2.html)
