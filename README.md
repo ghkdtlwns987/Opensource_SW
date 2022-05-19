@@ -4,10 +4,10 @@
 ## 리눅스 명령어
 | 명령어 |설명|예시|링크|
 |----|-----|---|---|
-|top|실시간으로 업데이트 되는 메모리 사용량, CPU 사용량 등을 보여줌.|$ top|[바로가기](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_top)|
-|ps|현재 실행중인 프로세스의 목록을 보는 명령어이다.|$ ps -ef|[바로가기](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_ps)|
-|jobs|현재 쉘 세션에서 실행시킨 백그라운드 작업의 목록이 출력되는 명령어이다.|$ jobs|[바로가기](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_jobs)|
-|kill|프로세스에 시그널을 보내는 명령어이다.|$ kill [process name]|[바로가기](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A4%91%EC%A7%80_kill)|
+|```top```|실시간으로 업데이트 되는 메모리 사용량, CPU 사용량 등을 보여줌.|```$ top```|[바로가기](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_top)|
+|```ps```|현재 실행중인 프로세스의 목록을 보는 명령어이다.|```$ ps -ef```|[바로가기](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_ps)|
+|```jobs```|현재 쉘 세션에서 실행시킨 백그라운드 작업의 목록이 출력되는 명령어이다.|```$ jobs```|[바로가기](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_jobs)|
+|```kill```|프로세스에 시그널을 보내는 명령어이다.|```$ kill [process name]```|[바로가기](https://zetawiki.com/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4_%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%A4%91%EC%A7%80_kill)|
 
 ### top 
 #### 설명
@@ -25,7 +25,7 @@ top 명령어는 줄 순서대로 표현한다고 보면 된다.
 
 [모든 내용 보기](https://man7.org/linux/man-pages/man1/top.1.html)
 
-### ps [ps -ef] [ps aux]
+### ps [```ps -ef```] [```ps aux```]
 #### 설명
 - Process status 의 약자로 현재 실행중인 프로세스 목록을 보는 명령어이다. 
 - ps -ef , ps aux 를 많이 사용한다. 
@@ -42,8 +42,8 @@ top 명령어는 줄 순서대로 표현한다고 보면 된다.
 |x|실행중인 프로세스의 정보를 출력|
 
 #### 자주쓰는 옵션
-- ps -ef : PID와 PPID 등 확인 가능
-- ps aux : CPU, MEM 사용률, 프로세스 상태 코드 등 확인 가능
+- ```ps -ef : PID와 PPID 등 확인 가능```
+- ```ps aux : CPU, MEM 사용률, 프로세스 상태 코드 등 확인 가능```
 
 [모든 내용 보기](https://man7.org/linux/man-pages/man1/ps.1.html)
 
@@ -83,9 +83,9 @@ jobs 는 이렇게 background 프로세스를 Foreground 로 전환하거나 다
 
 
 
-### kill [kill -9 [PID]] [kill [PID]]
+### kill [```kill -9 [PID]```] [```kill [PID]```]
 - 프로세스에 시그널을 보내는 명령어로 주로 프로세스를 강제 종료할때 사용된다. 
-- kill -9 [PID] 
+- ```kill -9 [PID]``` 
 #### Options
 |옵션 혹은 SIGNUM|설명|
 |---|---|
@@ -94,3 +94,20 @@ jobs 는 이렇게 background 프로세스를 Foreground 로 전환하거나 다
 ![kill 내용](https://user-images.githubusercontent.com/54488922/169214570-6b502c87-aa37-474b-ada5-54c7fc84f5f5.png)
 
 [모든 내용 보기](https://man7.org/linux/man-pages/man2/kill.2.html)
+
+  
+    
+## vim 매크로 사용법
+### (1) 기본적인 매크로 사용방법
+1. ```커맨드 모드(esc 누른 상태)``` 진입
+2. ```'q'```를 누르고 ```a~z``` 사이 문자로 매크로(recording) 시작 **(여기서 입력한 알파벳이 매크로 이름이 된다.)**
+3. 매크로를 사용하려면 커맨드 모드에서 ```@+a~z``` 입력
+
+### (2) 매크로 재생하는 법
+1. ```커맨드 모드(esc 누른 상태)``` 진입
+2. ```@a```라고 누르면 매크로 ```a```가 재생된다.
+3. ```@@```를 누르면 가장 ```최근에 재생한 매크로```가 실행
+
+### (3) 자주 사용하는 매크로 파일로 저장 방법
+1. ~/.vimrc 를 연다
+2. ``` let @a = '매크로로 동작시킬 문자열'   // 여기서 이름은 a로 지정한다는 뜻이다. (@a) ```
