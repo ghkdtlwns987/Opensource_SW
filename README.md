@@ -117,9 +117,9 @@ jobs 는 이렇게 background 프로세스를 Foreground 로 전환하거나 다
 
 ![vim 매크로 5](https://user-images.githubusercontent.com/54488922/169224510-b7d39810-f48d-47c9-977e-1c04a01d621f.png)  
 위 상태로 매크로를 통해 바꿔보고자 한다.  
-
-먼저 ```esc```를 누르고 ```qe``` 를 누른다 (매크로 이름을 e로 설정할 거기 때문)
-그럼 아래 상태처럼 된다.
+  
+먼저 ```esc```를 누르고 ```qe``` 를 누른다 (매크로 이름을 e로 설정할 거기 때문)  
+그럼 아래 상태처럼 된다.  
 ![vim 매크로 2](https://user-images.githubusercontent.com/54488922/169224916-4af582d6-afa6-4a4d-9b38-d00341ff83c6.png)    
 
 이후 ```ww``` 를 눌러 다음 학번으로 이동한다. 그럼 커서가 다음과 같이 위치할 것이다.   
