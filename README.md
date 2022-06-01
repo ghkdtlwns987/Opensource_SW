@@ -116,19 +116,19 @@ jobs 는 이렇게 background 프로세스를 Foreground 로 전환하거나 다
 위 상태를  
 
 ![vim 매크로 5](https://user-images.githubusercontent.com/54488922/169224510-b7d39810-f48d-47c9-977e-1c04a01d621f.png)  
-위 상태로 매크로를 통해 바꿔보고자 한다.
+위 상태로 매크로를 통해 바꿔보고자 한다.  
 
 먼저 ```esc```를 누르고 ```qe``` 를 누른다 (매크로 이름을 e로 설정할 거기 때문)
 그럼 아래 상태처럼 된다.
-![vim 매크로 2](https://user-images.githubusercontent.com/54488922/169224916-4af582d6-afa6-4a4d-9b38-d00341ff83c6.png)  
+![vim 매크로 2](https://user-images.githubusercontent.com/54488922/169224916-4af582d6-afa6-4a4d-9b38-d00341ff83c6.png)    
 
-이후 ```ww``` 를 눌러 다음 학번으로 이동한다. 그럼 커서가 다음과 같이 위치할 것이다. 
-![vim 매크로 3](https://user-images.githubusercontent.com/54488922/169224502-bcd14683-df67-4229-8fab-3a6e13bd518c.png)  
+이후 ```ww``` 를 눌러 다음 학번으로 이동한다. 그럼 커서가 다음과 같이 위치할 것이다.   
+![vim 매크로 3](https://user-images.githubusercontent.com/54488922/169224502-bcd14683-df67-4229-8fab-3a6e13bd518c.png)    
 
-커서가 위처럼 위치했으면 13x 로 공백을 포함한 문자를 제거한 후 ```www``` 를 입력해  
-위와같이 커서를 위치시키로 매크로를 **저장**하기 위해 ```q```를 입력해 매크로를 저장한다.  
-![vim 매크로 4](https://user-images.githubusercontent.com/54488922/169224505-79165488-ff76-4684-9fda-1b3ef4e950f7.png)  
+커서가 위처럼 위치했으면 13x 로 공백을 포함한 문자를 제거한 후 ```www``` 를 입력해     
+위와같이 커서를 위치시키로 매크로를 **저장**하기 위해 ```q```를 입력해 매크로를 저장한다.    
+![vim 매크로 4](https://user-images.githubusercontent.com/54488922/169224505-79165488-ff76-4684-9fda-1b3ef4e950f7.png)    
 
-위 작업을 반복하기 위해 ```@@``` 나 ```@e``` 를 계속해서 입력해주면 아래와 같이 된다.  
-![vim 매크로 5](https://user-images.githubusercontent.com/54488922/169224510-b7d39810-f48d-47c9-977e-1c04a01d621f.png)  
+위 작업을 반복하기 위해 ```@@``` 나 ```@e``` 를 계속해서 입력해주면 아래와 같이 된다.    
+![vim 매크로 5](https://user-images.githubusercontent.com/54488922/169224510-b7d39810-f48d-47c9-977e-1c04a01d621f.png)    
 
