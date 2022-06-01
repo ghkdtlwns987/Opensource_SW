@@ -1,5 +1,4 @@
 # 20184327 황시준 오픈소스 SW 과제
-<img src="https://user-images.githubusercontent.com/54488922/168478163-dad1a247-58cf-4e5f-9870-4dd75ae66bfd.png" width="50%" height="50%"/>
 
 ## 리눅스 명령어
 | 명령어 |설명|예시|링크|
